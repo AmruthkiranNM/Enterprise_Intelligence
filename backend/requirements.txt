@@ -8,3 +8,7 @@ openai
 tavily-python
 python-docx
 mistralai
+reportlab
+passlib
+bcrypt
+email-validator

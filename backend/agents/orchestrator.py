@@ -1,6 +1,6 @@
 import os
 import json
-from mistralai import Mistral
+from mistralai.client import Mistral
 from dotenv import load_dotenv
 from utils.parser import parse_json
 

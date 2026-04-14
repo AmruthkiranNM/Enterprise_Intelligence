@@ -65,7 +65,7 @@ async def test(client_url: str, target_domain: str):
             print(f"Recommended Approach: {result.get('recommendedApproach')}")
             print(f"Approach Reason    : {result.get('recommendedApproachReason')}")
 
-            print(f"\n── CUSTOMER TRACK ──")
+            print(f"\n-- CUSTOMER TRACK --")
             print(f"Verdict        : {customer.get('verdict')}")
             print(f"Confidence     : {customer.get('confidence')}/100")
             print(f"Regret Score   : {customer_regret.get('score')}/100")
@@ -80,7 +80,7 @@ async def test(client_url: str, target_domain: str):
             if customer.get("ifAvoid"):
                 print(f"If AVOID       : {customer.get('ifAvoid')}")
 
-            print(f"\n── PARTNER TRACK ──")
+            print(f"\n-- PARTNER TRACK --")
             print(f"Verdict        : {partner.get('verdict')}")
             print(f"Confidence     : {partner.get('confidence')}/100")
             print(f"Regret Score   : {partner_regret.get('score')}/100")
